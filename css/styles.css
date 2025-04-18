@@ -1,0 +1,164 @@
+/* General */ 
+*{
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #343a40;
+  }
+
+  /* Hero Section */
+  .hero-video {
+    position: relative;
+    height: 500px; /* Ajusta la altura a gusto */
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+  
+  .hero-video .container {
+    z-index: 2;
+    text-align: left;
+  }
+  
+  .hero-video .bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+  }
+  
+  .hero-text {
+    max-width: 600px;
+  }
+  
+  .hero-text h2,
+  .hero-text p {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  }
+  /* Servicios */
+  .card-body {
+    text-align: center;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #6c757d;
+  }
+  
+  .card {
+    border-radius: 10px;
+  }
+  
+  /* Sección ¿Por qué elegirnos? */
+  h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  
+  h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+  }
+  
+  section {
+    padding: 60px 0;
+  }
+  
+ /* Testimonios */
+   blockquote {
+    border-left: 4px solid #28a745;
+    padding-left: 1rem;
+    margin: 0;
+    font-style: italic;
+    color: #555;
+  }
+  
+  blockquote footer {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  blockquote p {
+    font-size: 1.1rem;
+    color: #6c757d;
+  }
+  
+  /* CTA */
+  section.bg-success {
+    background-color: #28a745 !important;
+  }
+  
+  section.bg-success h2 {
+    font-size: 2.5rem;
+  }
+  
+  section.bg-success .btn-light {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background-color: #fff;
+    color: #28a745;
+    border: 2px solid #28a745;
+    text-transform: uppercase;
+  }
+  
+  section.bg-success .btn-light:hover {
+    background-color: #28a745;
+    color: #fff;
+    border: 2px solid #28a745;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #343a40;
+    color: #ffffff;
+  }
+  
+  footer a {
+    color: #ffffff;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-video h2 {
+      font-size: 2rem;
+    }
+  
+    .hero-video p {
+      font-size: 1rem;
+    }
+  
+    .card-body {
+      padding: 2rem;
+    }
+  }
+  
+  body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  main {
+    flex: 1;
+  }
+  
+  iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    min-height: 300px;
+  }
