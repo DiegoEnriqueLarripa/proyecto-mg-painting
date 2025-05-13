@@ -1,5 +1,6 @@
+@charset "UTF-8";
 * {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -9,12 +10,12 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #dfdfdf;
-  font-family: 'Roboto', sans-serif;
-  background: radial-gradient(#b0d1ff,#ffffff);
+  font-family: "Roboto", sans-serif;
+  background: radial-gradient(#b0d1ff, #ffffff);
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 main {
@@ -25,10 +26,18 @@ section {
   padding: 60px 0;
 }
 
+iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  min-height: 300px;
+}
+
 /* Navbar */
 .navbar {
   background-color: #0d6efd;
 }
+
 .me-2 {
   border-radius: 50%;
 }
@@ -42,83 +51,76 @@ section {
   align-items: center;
   color: #ffffff;
 }
-
 .hero-video .container {
   z-index: 2;
   text-align: left;
 }
-
 .hero-video .bg-video {
   position: absolute;
   top: 0;
   left: 0;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: 100%;
   z-index: 1;
 }
-
-.hero-text {
-  max-width: 600px;
+.hero-video h2, .hero-video p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-.hero-text h2,
-.hero-text p {
-  text-shadow: 2px 2px 4px #000000b3;
+/* Footer */
+footer {
+  background-color: transparent;
+  color: #ffffff;
 }
-/* seccion quienes somos */
+footer a {
+  color: #ffffff;
+}
 
+/* Sección "Quiénes somos" */
 #quienes-somos p {
   font-size: 1.1rem;
   line-height: 1.6;
 }
-
 #quienes-somos img {
   max-width: 100%;
   border-radius: 1rem;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
-
 #quienes-somos img:hover {
   transform: scale(1.03);
 }
-
 #quienes-somos .row {
   margin-bottom: 3rem;
 }
-
 @media (max-width: 768px) {
   #quienes-somos .row {
     text-align: center;
   }
-
   #quienes-somos img {
     margin-top: 1rem;
   }
 }
 
 /* Servicios */
-
+.card {
+  border-radius: 10px;
+}
 .card-body {
   text-align: center;
 }
-
 .card-title {
   font-size: 1.25rem;
   font-weight: bold;
 }
-
 .card-text {
   font-size: 1rem;
   color: #6c757d;
 }
 
-.card {
-  border-radius: 10px;
-}
-
-/* Sección ¿Por qué elegirnos? */
+/* ¿Por qué elegirnos? */
 h2 {
   font-size: 2.5rem;
   font-weight: bold;
@@ -137,99 +139,59 @@ blockquote {
   font-style: italic;
   color: #000000;
 }
-.blockquote-footer {
-  margin-top: -1rem;
-  margin-bottom: 1rem;
-  font-size: .875em;
-  color: #198ffd;
+blockquote p {
+  font-size: 1.1rem;
+  color: #6c757d;
 }
-
 blockquote footer {
   font-weight: bold;
   color: #333;
 }
 
-blockquote p {
-  font-size: 1.1rem;
-  color: #6c757d;
+.blockquote-footer {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875em;
+  color: #198ffd;
 }
 
-/* ctA */
+/* CTA */
 section.bg-success {
   background-color: #000000 !important;
 }
-
 section.bg-success h2 {
   font-size: 2.5rem;
 }
-
 section.bg-success .btn-light {
   font-size: 1.2rem;
   padding: 12px 30px;
   border-radius: 50px;
-  background-color: #fff;
+  background-color: #ffffff;
   color: #0d6efd;
   border: 2px solid #ffffff;
   text-transform: uppercase;
 }
-
 section.bg-success .btn-light:hover {
   background-color: #0d6efd;
-  color: #fff;
+  color: #ffffff;
   border: 2px solid #0d6efd;
 }
 
-/* Footer */
-footer {
-  background-color: #ffffff00;
-  color: #ffffff;
-}
-
-footer a {
-  color: #ffffff;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-  .hero-video h2 {
-    font-size: 2rem;
-  }
-
-  .hero-video p {
-    font-size: 1rem;
-  }
-
-  .card-body {
-    padding: 2rem;
-  }
-}
-
-/* Mapa */
-iframe {
-  width: 100%;
-  height: 100%;
-  border: 0;
-  min-height: 300px;
-}
-
-/* Estilos para la galería */
+/* Galería */
 .gallery-section img {
   border-radius: 12px;
   transition: transform 0.3s ease;
 }
-
 .gallery-section img:hover {
   transform: scale(1.03);
 }
-
 .gallery-section .card {
   border: none;
   border-radius: 12px;
   overflow: hidden;
 }
-
 .gallery-section .ratio {
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
+}/*# sourceMappingURL=styles.css.map */
